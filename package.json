@@ -74,5 +74,9 @@
     "*.ts?(x)": [
       "prettier --parser=typescript --write"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbsenceSliet/bundelTemplate.git"
   }
 }
