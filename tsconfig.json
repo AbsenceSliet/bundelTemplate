@@ -1,0 +1,27 @@
+{
+  "include": ["src"],
+  "exclude": ["src/**/**.test.ts"],
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": ["dom", "dom.iterable", "esnext"], // 导入库类型定义
+    "allowJs": true, // 是否编辑js文件
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true, // 开启所有严格的类型检查
+    "module": "esnext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react",
+    "declaration": true,
+    "downlevelIteration": true, // 降级遍历器实现，如果目标源是es3/5，那么遍历器会有降级的实现
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true, // 防止switch语句贯穿(即如果没有break语句后面不会执行)
+    "noEmit": true, // 不输出文件,即编译后不会生成任何js文件
+    "noEmitOnError": true, // 发送错误时不输出任何文件
+    "noEmitHelpers": true, // 不生成helper函数，减小体积，需要额外安装，常配合importHelpers一起使用
+    "importHelpers": true, // 通过tslib引入helper函数，文件必须是模块
+    "removeComments": true // 删除注释
+  }
+}
